@@ -1,21 +1,40 @@
-body{
+body.signup, body.login, body.dashboard{
     background-color: rgb(241, 189, 241);
 }
-body.dashboard{
-    background-image: url("../images/BG-Image1.jpg")
+
+body.index{
+    background-image: url("../images/bg-one.jpg");
 }
-h1{
+
+h1, h4{
     text-align: center;
     color: rgb(139, 0, 69);
 }
-h2{
+
+h2, h5{
     text-align: center;
     color: rgb(0, 139, 30);
 }
+
 footer{
-    position: absolute;
-    bottom: 0;
+    position: sticky;
+    bottom: 0px;
+    left: 0;
     width: 100%;
-    background-color: #2d2d30;
-    color: rebeccapurple;
+}
+
+.carousel-inner{
+    height: 500px;
+    width: 100%;
+}
+.carousel-item{
+    height: 300px;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+.carousel-caption{
+    top: 0;
+    bottom: auto;
 }

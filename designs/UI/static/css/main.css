@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(241, 189, 241);
+}
+body.dashboard{
+    background-image: url("../images/BG-Image1.jpg")
+}
+h1{
+    text-align: center;
+    color: rgb(139, 0, 69);
+}
+h2{
+    text-align: center;
+    color: rgb(0, 139, 30);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #2d2d30;
+    color: rebeccapurple;
+}

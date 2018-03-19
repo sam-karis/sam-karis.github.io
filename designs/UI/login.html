@@ -3,14 +3,23 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Sign In</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>Home</title>
+
+    <!-- Setting to be responsive to mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+
+    <!-- Customized css-->
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+
 </head>
 
-<body>
+<body class="login">
+
+    <!-- Start Navbar-->
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Hello Books</a>
@@ -29,10 +38,18 @@
             </ul>
         </div>
     </nav>
+    <!--End Navbar-->
+
+
     <div class="container-fluid">
+
+        <!-- Heading-->
         <h1>
-            <strong>Hello Books App </strong>
+            <strong>Welcome to Hello Books</strong>
         </h1>
+        <!--End heading-->
+
+        <!--Start Login form -->
         <div class="row justify-content-center">
             <div class="col-4">
                 <form action="dashboard.html">
@@ -60,12 +77,26 @@
                 </form>
             </div>
         </div>
+        <!--End login form-->
+
     </div>
-    <footer class="text-center">
-        <p>Developed by Sammy Kariuki
-            <small> &copy; Copyright 2018 Term & Condition Apply</small>
-        </p>
+
+    <!--Start of footer-->
+    <footer class="bg-dark">
+        <br>
+        <div class="text-center text-white">
+            <p>Developed by Sammy Kariuki
+            </p>
+            <p>
+                <small> &copy; Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </small> Term & Condition Apply</p>
+        </div>
+        <br>
     </footer>
+    <!-- end footer-->
 </body>
 
 </html>

@@ -3,14 +3,23 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Sign Up</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>Home</title>
+
+    <!-- Setting to be responsive to mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+
+    <!-- Customized css-->
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+
 </head>
 
-<body>
+<body class="signup">
+
+    <!-- Start of Navbar-->
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Hello Books</a>
@@ -30,14 +39,25 @@
             </ul>
         </div>
     </nav>
+    <!-- End of Navbar-->
 
+    <!--Signup Form grid-->
     <div class="row justify-content-center">
         <div class="col-4">
+
+            <!--Start of signup Form-->
             <form>
+
+                <!--Form heading start-->
+                <h1>
+                    <strong>Welcome to Hello Books</strong>
+                </h1>
                 <h2>Sign Up</h2>
+                <!-- Form heading End-->
+
+                <!--Choose type of user start-->
                 <div class="input-group mb-3">
                     <label class="input-group-text" for="inputGroupSelect01">User Category</label>
-
                     <select class="custom-select" id="inputGroupSelect01">
                         <option selected>Choose...</option>
                         <option>Admin</option>
@@ -45,7 +65,9 @@
                         <option>Guest</option>
                     </select>
                 </div>
+                <!--Choose type of user End-->
 
+                <!--Form body or fields-->
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="inputfirstname">First Name</label>
@@ -80,22 +102,40 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
                     </div>
                 </div>
+                <!--Form body or fields-->
+                
+                <!--Start of Signup button-->
                 <button type="submit" class="btn btn-success btn-block">Sign In</button>
+                <!-- End of signUp  form-->
                 <br>
                 <p>Already have an Account
                     <a href="login.html">Login Here</a>
                 </p>
             </form>
+            <!-- End of signup form-->
+
         </div>
     </div>
-    </div>
+    <!--End of Signup grid-->
 
 
-    <footer class="text-center">
-        <p>Developed by Sammy Kariuki
-            <small> &copy; Copyright 2018 Term & Condition Apply</small>
-        </p>
+    <!--Start of footer-->
+    <footer class="bg-dark">
+        <br>
+        <div class="text-center text-white">
+            <p>Developed by Sammy Kariuki
+            </p>
+            <p>
+                <small> &copy; Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </small> Term & Condition Apply</p>
+        </div>
+        <br>
     </footer>
+    <!-- end footer-->
+
 </body>
 
 </html>

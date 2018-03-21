@@ -1,9 +1,14 @@
-body.signup, body.login, body.dashboard{
+body.signup, body.login, body.dashboard, body.books{
     background-color: rgb(241, 189, 241);
 }
 
 body.index{
     background-image: url("../images/bg-one.jpg");
+}
+
+.nav-icon{
+    height: 30px;
+    width: 30px;
 }
 
 h1, h4{
@@ -37,4 +42,8 @@ img{
 .carousel-caption{
     top: 0;
     bottom: auto;
+}
+
+.bookimg{
+    height: 100px;
 }

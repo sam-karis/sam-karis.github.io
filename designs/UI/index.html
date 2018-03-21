@@ -27,168 +27,169 @@
 
 <body class="index">
 
-    <div id="wrapper">
-
-        <!-- Start of navbar-->
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Hello Books</a>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Books</a>
-                    </li>
-                </ul>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">
-                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End of navbar-->
-
-        <!-- Start carousel for homepage-->
+    <!-- Start of navbar-->
+    <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <div id="introIndex" class="carousel slide" data-ride="carousel">
+            <div class="navbar-brand">
+                <a href="books.html"><img class="nav-icon" src="static/images/navbar.jpg"></a>
+            </div>
+            <a class="navbar-brand" href="#">Hello Books</a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+            </ul>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">
+                        <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of navbar-->
 
-                <!-- Bottom indicators-->
-                <ul class="carousel-indicators">
-                    <li data-target="#introIndex" data-slide-to="0" class="active"></li>
-                    <li data-target="#introIndex" data-slide-to="1"></li>
-                    <li data-target="#introIndex" data-slide-to="2"></li>
-                </ul>
+    <!-- Start carousel for homepage-->
+    <div class="container-fluid">
+        <div id="introIndex" class="carousel slide" data-ride="carousel">
 
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="static/images/carouselOne.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h2 class="display-1">Welcome</h2>
-                            <p class="display-6 text-info">Need to sharpen you knowledge, skills on any topic and don't know where to get the materials
-                                <strong>Hello Books App </strong>is here for you.
-                            </p>
-                        </div>
+            <!-- Bottom indicators-->
+            <ul class="carousel-indicators">
+                <li data-target="#introIndex" data-slide-to="0" class="active"></li>
+                <li data-target="#introIndex" data-slide-to="1"></li>
+                <li data-target="#introIndex" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/images/carouselOne.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2 class="display-1">Welcome</h2>
+                        <p class="display-6 text-info">Need to sharpen you knowledge, skills on any topic and don't know where to get the materials
+                            <strong>Hello Books App </strong>is here for you.
+                        </p>
                     </div>
-                    <div class="carousel-item">
-                        <img src="static/images/carouselTwo.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h2 class="display-1">Join us Today</h2>
-                            <div>
-                                <div class="container-fluid">
-                                    <div class="row justify-content-center">
-                                        <div class="col-8">
-                                            <p class="display-6 text-info">
-                                                <span>
-                                                    <a href="signup.html">Sign Up</a>
-                                                </span>
-                                                here for free as Hello Book's member to gain access to thousands of Books with a click of a button.
-                                            </p>
-                                        </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/carouselTwo.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2 class="display-1">Join us Today</h2>
+                        <div>
+                            <div class="container-fluid">
+                                <div class="row justify-content-center">
+                                    <div class="col-8">
+                                        <p class="display-6 text-info">
+                                            <span>
+                                                <a href="signup.html">Sign Up</a>
+                                            </span>
+                                            here for free as Hello Book's member to gain access to thousands of Books with a click of a button.
+                                        </p>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="container-fluid">
-                                    <div class="row justify-content-center">
-                                        <div class="col-8">
-                                            <p class="display-6 text-warning">For returning members
-                                                <span>
-                                                    <a href="login.html">Login</a>
-                                                </span> Here to access your account.
-                                            </p>
-                                        </div>
+                            <div class="container-fluid">
+                                <div class="row justify-content-center">
+                                    <div class="col-8">
+                                        <p class="display-6 text-warning">For returning members
+                                            <span>
+                                                <a href="login.html">Login</a>
+                                            </span> Here to access your account.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="static/images/carouselThree.jpg" alt="">
-                        <div class="carousel-caption bg-light">
-                            <h2 class="display-1">Hello Books Life</h2>
-                            <p class="display-6 text-info">Variety of Books</p>
-                            <br>
-                            <p class="display-6 text-info">Get a Book by a click of a button</p>
-                            <br>
-                            <p class="display-6 text-info">Reliable and Efficient Services</p>
-                            <br>
-                            <p class="display-6 text-danger">Thank you for Visiting</p>
-                            <br>
-                        </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="static/images/carouselThree.jpg" alt="">
+                    <div class="carousel-caption bg-light">
+                        <h2 class="display-1">Hello Books Life</h2>
+                        <p class="display-6 text-info">Variety of Books</p>
+                        <br>
+                        <p class="display-6 text-info">Get a Book by a click of a button</p>
+                        <br>
+                        <p class="display-6 text-info">Reliable and Efficient Services</p>
+                        <br>
+                        <p class="display-6 text-danger">Thank you for Visiting</p>
+                        <br>
                     </div>
-
-                    <!-- Left and Right controls -->
-                    <a class="carousel-control-prev" href="#introIndex" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#introIndex" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
                 </div>
+
+                <!-- Left and Right controls -->
+                <a class="carousel-control-prev" href="#introIndex" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#introIndex" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
-        <!-- End of carousel-->
-
-        <hr>
-
-        <div class="text-center bg-success">
-            <div class="row">
-                <div class="col">
-                    <!-- Start of About Us -->
-                    <section id="aboutUs">
-                        <h4 class="display-6">About Hello Books</h2>
-                            <p class="text-warning">
-                                Hello Books is a web app that is created to bridge the gap of knowledge by making books available to everybody. In the world
-                                we live in today for anyone to survive alot and make an impact needs diverse knowledge and
-                                skills while resources are limitted.
-                                <strong>Hello Books</strong> bridge this gap by making reading resources available.
-                            </p>
-                    </section>
-                    <!-- End of About us-->
-                </div>
-                <div class="col table-info">
-                    <!-- Start of Services Offered -->
-                    <section id="servicesOffered">
-                        <h5 class="display-6">Services Offered By Hello Books</h5>
-                        <dl>
-                            <dt>Search and View Books</dt>
-                            <dd>All users can search and view the books available for our users.</dd>
-                            <dt>Borrow a Book</dt>
-                            <dd>Registered users can Borrow a book in the library.</dd>
-                            <dt>Return a Book</dt>
-                            <dd>A user who has borrowed a book can return the book using the app.</dd>
-                            <dt>View Borrowing History</dt>
-                            <dd>A registered user can view his/her borrowing history</dd>
-                        </dl>
-                    </section>
-                    <!-- End of Services Offered-->
-                </div>
-            </div>
-        </div>
-
-        <!--Start of contacts -->
-        <!--End of contacts -->
-
-
-        <!--Start of footer-->
-        <footer>
-                <br>
-                <div class="text-center text-muted">
-                    <small>
-                        <p>Developed by Sammy Kariuki &copy; Copyright
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script> Term & Condition Apply</p>
-                    </small>
-                </div>
-                <br>
-            </footer>
-        <!-- end footer-->
-
     </div>
+    <!-- End of carousel-->
+
+    <hr>
+
+    <div class="text-center bg-success">
+        <div class="row">
+            <div class="col">
+                <!-- Start of About Us -->
+                <section id="aboutUs">
+                    <h4 class="display-6">About Hello Books</h2>
+                        <p class="text-warning">
+                            Hello Books is a web app that is created to bridge the gap of knowledge by making books available to everybody. In the world
+                            we live in today for anyone to survive alot and make an impact needs diverse knowledge and skills
+                            while resources are limitted.
+                            <strong>Hello Books</strong> bridge this gap by making reading resources available.
+                        </p>
+                </section>
+                <!-- End of About us-->
+            </div>
+            <div class="col table-info">
+                <!-- Start of Services Offered -->
+                <section id="servicesOffered">
+                    <h5 class="display-6">Services Offered By Hello Books</h5>
+                    <dl>
+                        <dt>Search and View Books</dt>
+                        <dd>All users can search and view the books available for our users.</dd>
+                        <dt>Borrow a Book</dt>
+                        <dd>Registered users can Borrow a book in the library.</dd>
+                        <dt>Return a Book</dt>
+                        <dd>A user who has borrowed a book can return the book using the app.</dd>
+                        <dt>View Borrowing History</dt>
+                        <dd>A registered user can view his/her borrowing history</dd>
+                    </dl>
+                </section>
+                <!-- End of Services Offered-->
+            </div>
+        </div>
+    </div>
+
+    <!--Start of contacts -->
+    <!--End of contacts -->
+
+
+    <!--Start of footer-->
+    <footer>
+        <br>
+        <div class="text-center text-muted">
+            <small>
+                <p>Developed by Sammy Kariuki &copy; Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Term & Condition Apply</p>
+            </small>
+        </div>
+        <br>
+    </footer>
+    <!-- end footer-->
+
+
 </body>
 
 </html>

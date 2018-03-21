@@ -30,7 +30,7 @@
             <a class="navbar-brand" href="#">Hello Books</a>
             <ul class="nav justify-content-center">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Books</a>
+                    <a class="nav-link" href="book.html">Books</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">History</a>
@@ -57,10 +57,10 @@
     </nav>
     <!-- End Navbar-->
 
-    <!--Creat card to show profile-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4 pull-right">
+            <!--Creat card to show profile-->
+            <div class="col-4">
                 <div class="card" style="height:25%; width:50%">
                     <img class="card-img-top" src="static/images/userAvatar.png" alt="User Photo" style="height:100%; width:100%">
                     <div class="card-body">
@@ -69,11 +69,15 @@
                     </div>
                 </div>
             </div>
+            <!-- End of card-->
+            <div class="col-4">
+                <h3 class="display-6">Admin section</h3>
+                <a href="admin.html">View</a>
+            </div>
         </div>
     </div>
-    <!-- End of card-->
 
-    <!-- Start modal for user profile-->
+    <!-- Start user profile-->
     <div class="container">
         <div class="modal fade" id="profileModal">
             <div class="modal-dialog modal-dialog-centered">
@@ -137,7 +141,7 @@
             </div>
         </div>
     </div>
-    <!-- End modal for user profile-->
+    <!-- End user profile-->
 
     <!--Start of footer-->
     <footer>

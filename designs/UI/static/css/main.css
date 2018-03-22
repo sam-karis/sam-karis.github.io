@@ -1,4 +1,4 @@
-body.signup, body.login, body.dashboard, body.books{
+body.signup, body.login, body.dashboard, body.books, body.history{
     background-color: rgb(241, 189, 241);
 }
 
@@ -46,4 +46,10 @@ img{
 
 .bookimg{
     height: 100px;
+    width: 100px;
+}
+
+.table td, .table th{
+    vertical-align: middle;
+    text-align: center;
 }

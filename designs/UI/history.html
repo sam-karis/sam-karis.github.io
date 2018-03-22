@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>User History</title>
+
+    <!-- Setting to be responsive to mobile first-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Customized css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+
+</head>
+
+<body class="history">
+
+    <!-- Start of navbar-->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <p class="navbar-brand">Hello Books</p>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                </li>
+            </ul>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <!-- End of navbar-->
+
+    <!-- Page title-->
+    <div class="text-center">
+        <h1>Books Borrowed</h1>
+    </div>
+    <hr>
+    <!-- Page title-->
+
+    <!-- Start list of books -->
+    <div class="container">
+        <table class="table text-primary">
+            <thead class="thead-light">
+                <tr>
+                    <th>Book</th>
+                    <th>Date Borrowed</th>
+                    <th>Return Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/spells.jpg">
+                    </td>
+                    <td class="text-center">15
+                        <sup>th</sup> MARCH 2018</td>
+                    <td class="text-center">10
+                        <sup>th</sup> APRIL 2018</td>
+                    <td class="text-center">Borrowed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/animal lympics.jpg">
+                    </td>
+                    <td class="text-center">1
+                        <sup>st</sup> JUNE 20187</td>
+                    <td class="text-center">2
+                        <sup>nd</sup> APRIL 2018</td>
+                    <td class="text-center">Borrowed</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/design and creation.jpg">
+                    </td>
+                    <td class="text-center">19
+                        <sup>th</sup> FEB 2018</td>
+                    <td class="text-center">20
+                        <sup>th</sup> MARCH 2018</td>
+                    <td class="text-center">Over Due</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/drama.jpg">
+                    </td>
+                    <td class="text-center">15
+                        <sup>th</sup> JUNE 2017</td>
+                    <td class="text-center">20
+                        <sup>th</sup> AUG 2017</td>
+                    <td class="text-center">Returned</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/The world.jpg">
+                    </td>
+                    <td class="text-center">15
+                        <sup>th</sup> JUNE 2017</td>
+                    <td class="text-center">20
+                        <sup>th</sup> AUG 2017</td>
+                    <td class="text-center">Returned</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="bookimg" src="static/Books/spells.jpg">
+                    </td>
+                    <td class="text-center">15
+                        <sup>th</sup> JAN 2017</td>
+                    <td class="text-center">20
+                        <sup>th</sup> JAN 2017</td>
+                    <td class="text-center">Returned</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <!-- End list of books -->
+
+    <!--Start of footer-->
+    <footer>
+        <br>
+        <div class="text-center text-muted">
+            <small>
+                <p>Developed by Sammy Kariuki &copy; Copyright
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Term & Condition Apply</p>
+            </small>
+        </div>
+        <br>
+    </footer>
+    <!-- end footer-->
+
+</body>
+
+</html>

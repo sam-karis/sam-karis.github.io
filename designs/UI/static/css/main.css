@@ -27,7 +27,7 @@ footer{
     width: 100%;
 }
 
-.loginFooter, .signupFooter{
+.loginFooter{
     position: absolute;
     width: 100%;
 

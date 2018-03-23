@@ -39,10 +39,10 @@
                     <a class="nav-link" href="history.html">History</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Return Books</a>
+                    <a class="nav-link" href="user.html">Return Books</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Borrow Books</a>
+                    <a class="nav-link" href="user.html">Borrow Books</a>
                 </li>
             </ul>
             <ul class="nav justify-content-end">
@@ -55,12 +55,23 @@
             </ul>
         </div>
     </nav>
+    <hr>
     <!-- End Navbar-->
 
     <div class="container-fluid">
         <div class="row">
-            <!--Creat card to show profile-->
-            <div class="col-4">
+
+            <!-- Admin section-->
+            <div class="col-2 text-center">
+                <h3 class="display-6">Admin section</h3>
+                <p>The section can only be accessed by an Admin with the write authorization</p>
+                <a href="admin.html">View</a>
+            </div>
+            <!-- Admin section-->
+
+            <!--Create card to show user profile-->
+            <div class="col-3">
+                <h3 class="display-6">User section</h3>
                 <div class="card" style="height:25%; width:50%">
                     <img class="card-img-top" src="static/images/userAvatar.png" alt="User Photo" style="height:100%; width:100%">
                     <div class="card-body">
@@ -69,15 +80,161 @@
                     </div>
                 </div>
             </div>
-            <!-- End of card-->
-            <div class="col-4">
-                <h3 class="display-6">Admin section</h3>
-                <a href="admin.html">View</a>
+            <!-- End of card for user-->
+
+            <!-- Show most recommended books to the user-->
+            <div class="col-7">
+                <h2 class="text-center">Your Recommended Books</h2>
+                <hr>
+                <p class="text-center">This are books that are borrowed most frequently.</p>
+                <div class="row">
+
+                    <!-- Book One-->
+                    <div class="col-3">
+                        <div class="book">
+                            <div class="jumbotron">
+                                <h6 class="text-success">Grammer</h6>
+                                <img class="bookimg" src="static/Books/spells.jpg">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book One-->
+
+                    <!-- Book Two-->
+                    <div class="col-3">
+                        <div class="book">
+                            <div class="jumbotron">
+                                <h6 class="text-success">Designs</h6>
+                                <img class="bookimg" src="static/Books/design and creation.jpg">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book Two-->
+
+                    <!-- Book Three-->
+                    <div class="col-3">
+                        <div class="book">
+                            <div class="jumbotron">
+                                <h6 class="text-success">Drama</h6>
+                                <img class="bookimg" src="static/Books/drama.jpg">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Borrowed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book Three-->
+
+                    <!-- Book Four-->
+                    <div class="col-3">
+                        <div class="book">
+                            <div class="jumbotron">
+                                <h6 class="text-success">Art</h6>
+                                <img class="bookimg" src="static/Books/The world.jpg">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book Four-->
+
+                    <!-- Book Five-->
+                    <div class="col-3">
+                        <div class="book">
+                            <div class="jumbotron">
+                                <h6 class="text-success">HTML-CSS</h6>
+                                <img class="bookimg" src="static/Books/html and css.jpg">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Borrowed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book Five-->
+
+                    <!-- Book Six-->
+                    <div class="col-3">
+                        <div class="book2">
+                            <div class="jumbotron">
+                                <h6 class="text-success">Little lies</h6>
+                                <img class="bookimg" src="static/Books/little lies.jpg">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book six-->
+
+                    <!-- Book Seven-->
+                    <div class="col-3">
+                        <div class="book">
+                            <div class="jumbotron">
+                                <h6 class="text-success">Middle</h6>
+                                <img class="bookimg" src="static/Books/middle.png">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Borrowed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book seven-->
+
+                    <!-- Book Eight-->
+                    <div class="col-3">
+                        <div class="book2">
+                            <div class="jumbotron">
+                                <h6 class="text-success">physics</h6>
+                                <img class="bookimg" src="static/Books/physics.jpg">
+                                <hr>
+                                <small>
+                                    <p class="text-center text-muted">Description : </p>
+                                    <hr>
+                                </small>
+                                <p class="text-center text-info">Status : Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book Eight-->
+
+                </div>
+                
             </div>
+            <!-- Show most recommended books to the user-->
+
+
         </div>
     </div>
 
-    <!-- Start user profile-->
+    <!-- Start user profile statistics-->
     <div class="container">
         <div class="modal fade" id="profileModal">
             <div class="modal-dialog modal-dialog-centered">
@@ -141,7 +298,7 @@
             </div>
         </div>
     </div>
-    <!-- End user profile-->
+    <!-- End user profile statistics-->
 
 
     <!--Start of footer-->

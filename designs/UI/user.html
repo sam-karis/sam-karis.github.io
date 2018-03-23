@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Admin</title>
+    <title>user</title>
 
     <!-- Setting to be responsive to mobile first-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="history">
+<body class="user">
 
     <!-- Start of navbar-->
     <nav class="navbar navbar-dark bg-dark">
@@ -44,16 +44,9 @@
     <br>
     <!-- End of navbar-->
 
-    <!-- Page title-->
-    <div class="text-center">
-        <h1>Admin Section</h1>
-    </div>
-    <hr>
-    <!-- Page title-->
+    <h1>Borrow and Return a Book</h1>
 
     <div class="container">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addBookModal">Add Book</button>
-
         <!-- Start list of books -->
         <table class="table text-primary">
             <thead class="thead-dark">
@@ -72,8 +65,8 @@
                     <td class="text-center">Book of spell</td>
                     <td class="text-center">Description</td>
                     <td class="text-right">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editBookModal">Edit</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteBookModal">Delete</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
                     </td>
                 </tr>
                 <tr>
@@ -83,8 +76,8 @@
                     <td class="text-center">Animals</td>
                     <td class="text-center">Description</td>
                     <td class="text-right">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editBookModal">Edit</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteBookModal">Delete</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
 
                     </td>
                 </tr>
@@ -95,8 +88,8 @@
                     <td class="text-center">Design</td>
                     <td class="text-center">Description</td>
                     <td class="text-right">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editBookModal">Edit</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteBookModal">Delete</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
                     </td>
                 </tr>
                 <tr>
@@ -106,8 +99,8 @@
                     <td class="text-center">Drama</td>
                     <td class="text-center">Description</td>
                     <td class="text-right">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editBookModal">Edit</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteBookModal">Delete</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
                     </td>
                 </tr>
                 <tr>
@@ -117,108 +110,43 @@
                     <td class="text-center">The world</td>
                     <td class="text-center">Description</td>
                     <td class="text-right">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editBookModal">Edit</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteBookModal">Delete</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <img class="bookimg" src="static/Books/html and css.jpg">
                     </td>
-                    <td class="text-center">Html</td>
+                    <td class="text-center">Html Css</td>
                     <td class="text-center">Description</td>
                     <td class="text-right">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editBookModal">Edit</button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteBookModal">Delete</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#borrowBookModal">Borrow</button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#returnBookModal">Return</button>
                     </td>
                 </tr>
             </tbody>
 
         </table>
         <!-- End list of books -->
-
     </div>
 
-    <!-- Start Add Book Modal-->
+    <!-- Start Borrow Book Modal-->
     <div class="container">
-        <div class="modal fade" id="addBookModal">
+        <div class="modal fade" id="borrowBookModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
 
                     <!-- Start modal body-->
                     <div class="modal-body">
-                        <!--Start of add book form-->
+                        <!--Start of borrow book form-->
                         <form>
 
                             <!--Form heading start-->
                             <h1>
                                 <!--Modal Header -->
                                 <div class="modal-header">
-                                    <h3 class="modal-title">Add a book to the library</h3>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <!--Modal Header -->
-                            </h1>
-                            <hr>
-                            <!-- Form heading End-->
-
-                            <!-- Book Image-->
-                            <div>
-                                <label for="inputbookimage">Book Profile</label>
-                                <input type="file" class="form-control" id="inputbookimage">
-                            </div>
-
-                            <br>
-                            <!-- Book Image-->
-
-                            <!--Form body or fields-->
-                            <div>
-                                <label for="inputbooktitle">Book Title</label>
-                                <input type="text" class="form-control" id="inputbooktitle" placeholder="Title">
-                            </div>
-                            <div>
-                                <label for="inputbookdescription">Description</label>
-                                <input type="text" class="form-control" id="inputbookdescription" placeholder="Book Description">
-                            </div>
-                            <br>
-
-                            <!--Start of save button-->
-                            <button type="submit" class="btn btn-success btn-block">Save Book</button>
-                            <!-- End of save button-->
-
-                        </form>
-                        <!-- End of add book form-->
-                    </div>
-                    <!-- Start modal body-->
-
-                    <!--start Modal footer-->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Exit</button>
-                    </div>
-                    <!--End Modal footer-->
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Add Book Modal-->
-
-    <!-- Start Edit Book Modal-->
-    <div class="container">
-        <div class="modal fade" id="editBookModal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-
-                    <!-- Start modal body-->
-                    <div class="modal-body">
-                        <!--Start of edit book form-->
-                        <form>
-
-                            <!--Form heading start-->
-                            <h1>
-                                <!--Modal Header -->
-                                <div class="modal-header">
-                                    <h3 class="modal-title">Add a book to the library</h3>
+                                    <h3 class="modal-title">Borrow a book from the library</h3>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <!--Modal Header -->
@@ -231,32 +159,27 @@
                                 <img class="bookimg" src="static/Books/drama.jpg">
                             </div>
 
-                            <div class="row">
-                                <div class="col-9">
-                                    <input type="file" class="form-control" id="inputbookimage">
-                                </div>
-                                <div class="col-3">
-                                    <button type="button" class="upload">Upload</button>
-                                </div>
-                            </div>
-                            <br>
-                            <!-- Book Image-->
-
                             <!--Form body or fields-->
                             <div>
                                 <label for="inputbooktitle">Book Title</label>
-                                <input type="text" class="form-control" id="inputbooktitle" value="Book Existig Title">
+                                <input type="text" class="form-control" id="inputbooktitle" value="Book Title" disabled>
                             </div>
                             <br>
                             <div>
                                 <label for="inputbookdescription">Book Description</label>
-                                <input type="text" class="form-control" id="inputbookdescription" value="Book Existing Description">
+                                <input type="text" class="form-control" id="inputbookdescription" value="Book Existing Description" disabled>
                             </div>
                             <br>
 
-                            <!--Start of save button-->
-                            <button type="submit" class="btn btn-success btn-block">Save Book</button>
-                            <!-- End of save button-->
+                            <div>
+                                <label for="inputbookreturndate">Return Date</label>
+                                <input type="text" class="form-control" id="inputbookdescription" placeholder="dd-mm-yy">
+                            </div>
+                            <br>
+
+                            <!--Start of borrow button-->
+                            <button type="submit" class="btn btn-success btn-block">confirm Borrowing This Book</button>
+                            <!-- End of borrow button-->
 
                         </form>
                         <!-- End of edit book form-->
@@ -273,25 +196,25 @@
             </div>
         </div>
     </div>
-    <!-- End of Edit Book Modal-->
+    <!-- End of Borrow Book Modal-->
 
-
-    <!-- Start Delete Book Modal-->
+    <!-- Start Return Book Modal-->
     <div class="container">
-        <div class="modal fade" id="deleteBookModal">
+        <div class="modal fade" id="returnBookModal">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
 
                     <!-- Start modal body-->
                     <div class="modal-body">
-                        <!--Start of edit book form-->
+
+                        <!--Start of Return book form-->
                         <form>
 
                             <!--Form heading start-->
                             <h1>
                                 <!--Modal Header -->
                                 <div class="modal-header">
-                                    <h3 class="modal-title">Remove a book to the library</h3>
+                                    <h3 class="modal-title">Return a book to the library</h3>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
                                 <!--Modal Header -->
@@ -308,17 +231,17 @@
                             <!--Form body or fields-->
                             <div>
                                 <label for="inputbooktitle">Book Title</label>
-                                <input type="text" class="form-control" id="inputbooktitle" value="Book Existig Title">
+                                <input type="text" class="form-control" id="inputbooktitle" value="Book Title" disabled>
                             </div>
                             <br>
                             <div>
                                 <label for="inputbookdescription">Book Description</label>
-                                <input type="text" class="form-control" id="inputbookdescription" value="Book Existing Description">
+                                <input type="text" class="form-control" id="inputbookdescription" value="Book Description" disabled>
                             </div>
                             <br>
 
                             <!--Start of delete button-->
-                            <button type="submit" class="btn btn-danger btn-block">Confirm Delete</button>
+                            <button type="submit" class="btn btn-info btn-block">Confirm Return</button>
                             <!-- End of delete button-->
 
                         </form>
@@ -336,7 +259,7 @@
             </div>
         </div>
     </div>
-    <!-- End of Delete Book Modal-->
+    <!-- End of Return Book Modal-->
 
 
     <!--Start of footer-->
